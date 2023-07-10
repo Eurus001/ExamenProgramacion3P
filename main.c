@@ -69,7 +69,7 @@ void NuevoArchivo(const struct Alumnos* alumnos) {
     for (int i = 4; i >= 0; i--) {
         fprintf(archivo, "%d;%s;%s;%f;%f;%f;%f\n",
                 alumnos[i].n_alumno, alumnos[i].nombre, alumnos[i].carrera,
-                alumnos[i].notas[0], alumnos[i].notas[1], alumnos[i].notas[2], alumnos[i].promedio);
+                alumnos[i].notas[0], alumnos[i].notas[1], alumnos[i].notas[2], alumnos[i].promedio); // Escribe el promedio al final de cada linea
     }
 
     fclose(archivo);
